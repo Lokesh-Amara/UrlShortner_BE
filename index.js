@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 dotenv.config();
 
-const port = process.env.port || 3001;
+const port = process.env.PORT || 3001;
 const mongoClient = mongodb.MongoClient;
 const objectId = mongodb.ObjectID;
 const DB_URL = process.env.DBURL || "mongodb://127.0.0.1:27017";
